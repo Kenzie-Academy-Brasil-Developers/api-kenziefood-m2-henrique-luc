@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/cadastro2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <title>Cadastro - Kenzie Food</title>
+</head>
+
+<body>
+    
+    <!--- Recebe as mensagens de status -->
+    <!-- <div id="status"></div> -->
+
+    <!--- Recebe os formulários no formato de modal -->
+    <!-- <div id="modal"></div> -->
+
+    <section class="form-cadastro">
+
+        <div class="form-cadastro__titulo">
+            <h3>Cadastro de produto</h3>
+            <button>x</button>
+        </div>
+
+        <form action="">
+            <label for="nome">Nome do produto</label>
+            <input type="text" name="nome" placeholder="Nome do produto" />
+
+            <label for="descricao">Descrição</label>
+            <input type="textarea" name="descricao" placeholder="Descrição" />
+
+            <div class="form-cadastro__categorias">
+
+                <h4>Categorias</h4>
+
+                <div>
+                    <input type="checkbox" id="check-panificadora" name="panificadora" value="panificadora" checked="checked">
+                    <label for="panificadora">Panificadora</label>
+
+                    <input type="checkbox" id="check-frutas" name="frutas" value="frutas">
+                    <label for="frutas">Frutas</label>
+
+                    <input type="checkbox" id="check-bebidas" name="bebidas" value="bebidas">
+                    <label for="bebidas">Bebidas</label>
+
+                </div>
+            </div>
+
+            <label for="valor">Valor do produto</label>
+            <input type="text" name="valor" placeholder="Valor do produto" />
+
+            <label for="link">Link da imagem</label>
+            <input type="text" name="link" placeholder="Link da imagem" />
+
+            <div class="form-cadastro__botoes">
+                <button id="botao-cadastrar-produto">Salvar alterações</button>
+            </div>
+        </form>
+
+    </section>
+
+    <script type="module" src="./App.js"></script>
+</body>
+
+</html>
