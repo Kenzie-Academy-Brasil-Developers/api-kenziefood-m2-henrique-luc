@@ -54,12 +54,12 @@ const Api = class Api {
 
         if(token) {
             localStorage.setItem('token', token);
-            console.log('Token criado')
+            console.log('Token criado');
         } else {
-            console.log('Token não criado')
+            console.log('Token não criado');
         }
             
     }
 }
 
-export { Api }
+export { Api };
