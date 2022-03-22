@@ -10,7 +10,7 @@ const ListaDeProdutos = class ListaDeProdutos {
     }
 
     // Soma todos os valores de cada produto da lista
-
+    
     get valorTotal() {
         return this._listaDeProdutos.reduce((cur, prev) => cur.preco + prev, 0);
     }
@@ -26,10 +26,7 @@ const ListaDeProdutos = class ListaDeProdutos {
     removerProduto(id) {
         const arrAux = this._listaDeProdutos.filter(e => e.id !== id);
         this._listaDeProdutos = [...arrAux];
-    }
-
-
-    
+    }    
 
 }
 

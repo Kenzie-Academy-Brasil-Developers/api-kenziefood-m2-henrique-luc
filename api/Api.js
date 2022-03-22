@@ -41,8 +41,7 @@ const Api = class Api {
             password: senha
         };
 
-        console.log(data);
-
+      
         const response = await fetch(`${Api.PATH}/auth/login`, 
         
         {

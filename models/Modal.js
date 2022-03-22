@@ -17,7 +17,7 @@ const Modal = class Modal {
         elementoHtml.innerHTML = "";
 
         // Insere o template na tag
-        elementoHtml.innerHTML += this.criaTemplate();        
+        elementoHtml.innerHTML += this._criaTemplate();        
     }
 
     fechaModal() {
@@ -31,7 +31,7 @@ const Modal = class Modal {
         elementoHtml.style.display = "none"
     }
 
-    criaTemplate() {
+    _criaTemplate() {
         return this._codigoHtml;
     }
 }
