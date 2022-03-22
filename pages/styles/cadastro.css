@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(49, 49, 49);
+}
+
+
+.form-cadastro {
+    width: 500px;   
+    background-color: #FFFFFF;
+    color: #212529;
+}
+
+.form-cadastro__titulo {
+    background-color: #F8F9FA; 
+    padding: 0 36px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;      
+}
+
+.form-cadastro__titulo h3 {
+    font-size: 14px;
+}
+
+.form-cadastro__titulo button {
+    padding: .3rem .5rem;
+    border: none;
+    border-radius: 4px;
+    background-color:#dcdcdd;
+    cursor: pointer;
+}
+
+.form-cadastro form {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    padding-top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);   
+}
+
+
+
+.form-cadastro form input {
+    height: 52px;
+    padding: 26px 20px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E6;
+}
+
+.form-cadastro form > label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+
+.form-cadastro form > label:not(:first-child) {
+    margin-top: 20px;
+}
+
+.form-cadastro form > label label {
+    display: flex;
+}
+
+
+.form-cadastro__categorias h4 {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.form-cadastro__categorias div {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-cadastro__checkboxes {
+    cursor: pointer;
+}
+
+.form-cadastro__checkboxes input[type="checkbox"] {
+    display: none;
+}
+
+
+.form-cadastro__checkboxes span {
+    position: relative;
+    display: inline-block;
+    background-color:#F8F9FA;
+    color: #868E96;
+    min-width: 130px;
+    text-align: center;
+    padding: 11px 26px;
+    border-radius: 32px;
+    font-size: 14px;
+}
+
+.form-cadastro__checkboxes span:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+}
+
+
+.form-cadastro__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-cadastro__botoes button {
+    width: 49%;
+    padding: 15px 20px;
+    border-radius: 32px;
+    margin-top: 30px;
+    border: none;
+    font-weight: bold;
+    color: #868E96;
+    cursor: pointer;
+
+}
