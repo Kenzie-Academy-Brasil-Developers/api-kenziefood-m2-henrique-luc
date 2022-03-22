@@ -1,0 +1,61 @@
+/*header*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+figcaption {
+    display: none;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 21px 0 0 18px;
+}
+
+.logo h1 {
+    font-size: 21px;
+    color: #212529;
+}
+
+.logo h2 {
+    font-size: 16px;
+    color: #FF2253;
+    margin-left: 7px;
+}
+
+.pesquisa_produto {
+    border: 1.5px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #E9ECEF;
+    width: 342px;
+    height: 49px;
+    margin-top: 36px;
+    display: flex;
+}
+
+.pesquisa_produto img{
+
+}
+
+.pesquisa_produto input {
+    background-color: transparent;
+    border: none;
+}
+
+.pesquisa_produto input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #868E96;
+}
+
+
+@media screen and (min-width: 769px) {
+    .logo {
+
+    }
+}
