@@ -24,10 +24,9 @@
         <div class="form-cadastro__titulo">
             <h3>Edição de produto</h3>
             <button>x</button>
-        </div>        
+        </div>
 
         <form action="">
-            
             <label for="nome">Nome do produto</label>
             <input type="text" name="nome" placeholder="Nome do produto" />
 
@@ -40,7 +39,7 @@
 
                 <div>
 
-                    <label class="form-cadastro__checkboxes checked" >
+                    <!-- <label class="form-cadastro__checkboxes checked" >
                         <input type="checkbox" name="panificadora" id="cb-panificadora" checked="checked" />
                         <span>Panificadora</span>
                     </label>
@@ -53,7 +52,15 @@
                     <label class="form-cadastro__checkboxes"> 
                         <input type="checkbox" name="bebidas" id="cb-bebidas" />
                         <span>Bebidas</span>
-                    </label>
+                    </label> -->
+                    <input type="checkbox" id="check_1" name="check_1" value="check_1" checked="checked">
+                    <label for="check_1">Panificadora</label>
+
+                    <input type="checkbox" id="check_2" name="check_2" value="check_2">
+                    <label for="check_2">Frutas</label>
+
+                    <input type="checkbox" id="check_3" name="check_3" value="check_3">
+                    <label for="check_3">Bebidas</label>
 
                 </div>
             </div>
@@ -65,11 +72,11 @@
             <input type="text" name="link" placeholder="Link da imagem" />
 
             <div class="form-cadastro__botoes">
-                <button>Excluir</button>
-                <button>Salvar alterações</button>
+                <button id="botao-excluir">Excluir</button>
+                <button id="botao-salvar-alt">Salvar alterações</button>
             </div>
-
         </form>
+
     </section>
 
     <script type="module" src="./App.js"></script>
