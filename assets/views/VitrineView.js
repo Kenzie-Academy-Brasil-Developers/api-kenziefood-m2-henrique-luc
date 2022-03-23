@@ -12,14 +12,6 @@ const VitrineView = class VitrineView {
         const tagHtml = document.getElementById('vitrine-cards');
         tagHtml.innerHTML = "";
 
-        // console.log(listaDeProdutos[0])
-        // console.log(tagHtml)
-
-        // const { nome, descricao, id, imagem, preco, categoria } = listaDeProdutos[0]
-
-        // const cardView = new CardView(nome, descricao, id, imagem, preco, categoria)
-        // console.log(cardView)
-
         listaDeProdutos.forEach(produto => {
 
             if(cat.toLowerCase() === produto.categoria.toLowerCase() 
@@ -34,15 +26,9 @@ const VitrineView = class VitrineView {
                    } = produto;                   
    
                const p = new Produto(nome, descricao, categoria, preco, imagem, id );
-            //    console.log(p)
                const cardView = new CardView(p);
-               console.log(cardView)
-
-               
                tagHtml.innerHTML += cardView.template();
-            }
-            
-
+            }            
         })
 
     }

@@ -3,6 +3,7 @@
 // import { ProductController } from "./assets/controllers/ProductController.js"
 // import { ProductModalView } from "./assets/views/ProductModalView.js"
 
+import { VitrineController } from "./assets/controllers/VitrineController.js";
 import { VitrineView } from "./assets/views/VitrineView.js";
 
 // console.log("Oi")
@@ -23,7 +24,9 @@ import { VitrineView } from "./assets/views/VitrineView.js";
 
 // console.log(listaCarrinho)
 
-VitrineView.criaVitrine()
+await VitrineView.criaVitrine()
+await VitrineController.eventos()
+
 
     
 
