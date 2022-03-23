@@ -1,0 +1,362 @@
+/*header*/
+
+header,main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-top: 174px;
+}
+
+figcaption {
+    display: none;
+}
+
+.container_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 155px;
+    width: 100%;
+    background-color: white;
+}
+
+.container_header-logo {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 21px 0 0 18px; 
+}
+
+.container_header-logo h1 {
+    font-size: 21px;
+    color: #212529;
+    font-weight: 700;
+}
+
+.container_header-logo h2 {
+    font-size: 16px;
+    color: #FF2253;
+    margin-left: 7px;
+    font-weight: 700;
+}
+
+.container_header-icone_login_cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_header-icone_login_cadastro figure{
+    width: 36px;
+    position: fixed;
+    top: 16px;
+    left: 55%;
+}
+
+.container_header-icone_login_cadastro ul{
+    list-style: none;
+    background-color: #FFE9EE;
+    padding: 30px 10px ;
+    border-radius: 10px;
+    position: absolute;
+    top: 102%;
+    left: -348%;
+    display: none;
+}
+
+.container_header-icone_login_cadastro figure:hover ul, .container_header-icone_login_cadastro figure.over ul{display: flex;}
+
+.container_header-icone_login_cadastro button {
+    background-color: #F8F9FA;
+    border: none;
+    padding: 10px;
+    border-radius: 32px;
+    margin: 0 5px;
+    box-shadow:0 3px 10px 0 #ccc;
+    cursor: pointer;
+}
+
+.pesquisa_produto {
+    border: 1.5px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #E9ECEF;
+    width: 140%;
+    max-width: 342px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    margin: 36px auto;
+    position: fixed;
+    left: 6%;
+}
+
+.pesquisa_produto img{
+    margin-left: 15px;
+}
+
+.pesquisa_produto input {
+    background-color: transparent;
+    border: none;
+    padding:15px 16px;
+}
+
+.pesquisa_produto input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #868E96;
+}
+
+.pesquisa_produto input:focus {
+    outline: 0;
+}
+
+/*BOTOES FILTRO*/
+
+.botoes_filtro {
+    display: flex;
+    margin: 0 0 28px 18px;
+    cursor: pointer;
+}
+
+.botoes_filtro button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.botoes_filtro div {
+    display: flex;
+    align-items: center;
+}
+
+.botoes_filtro-todos {
+    background-color: #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 10px;
+    margin-right: 28px;
+}
+
+.botoes_filtro-panificadora {
+    box-sizing: border-box;
+    border-radius: 32px;
+    background: #FFF7F4;
+    padding: 10px;
+    margin-right: 28px;
+}
+
+.botoes_filtro-frutas {
+    background: #FFF1F4;
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 10px;
+    margin-right: 28px;
+}
+
+.botoes_filtro-bebidas {
+    background: #F3EEF5;
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 10px;
+    margin-right: 28px;
+}
+
+/*CARD PRODUTOS*/
+
+.vitrine_cards {
+    display: flex;
+    margin: 0 23px 8px 18px;
+}
+
+.vitrine_cards-card {
+    font-family: 'Poppins', sans-serif;
+    width: 303px;
+    height: 397px;
+    margin-right: 40px;
+}
+
+.vitrine_cards-card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 27px 0 16px;
+}
+
+.vitrine_cards-card p {
+    font-size: 14px ;
+    font-weight: 400;
+    color: #868E96;
+    margin-bottom: 27px;
+}
+
+.vitrine_cards-card span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.vitrine_cards-card-imagem {
+    border: 3px solid #FFE9EE;
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+}
+
+.vitrine_cards-botoes {
+   display: flex;
+   margin-left: 15px;
+}
+
+.vitrine_cards-botoes button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.vitrine_cards-botoes-filtro {
+    background: #FFE9EE;
+    border-radius: 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+
+.botao-1 {
+    position: absolute;
+    top: 443px; 
+}
+
+.botao-2 {
+    position: absolute;
+    top: 443px; 
+    left: 147px;
+}
+
+.vitrine_cards-botoes-filtro img {
+    width: 15px;
+}
+
+.vitrine_cards-card-preco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vitrine_cards-card-add-carrinho {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.vitrine_cards-card-add-carrinho img {
+    border: none;
+    background-color: #E4F7EF;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+/*CARRINHO*/
+
+.container_carrinho {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #FF2253;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.container_carrinho h3 {
+    font-size: 17px;
+    margin-left: 21px;
+}
+
+@media screen and (min-width: 769px) {
+
+    .container_lateral {
+
+    }
+
+    main {
+        padding-top: 122px;
+    }
+    
+    .container_header {
+        height: 72px;
+        box-shadow: 0px 0px 40px -18px rgba(0, 0, 0, 0.25);
+    }
+    
+    .container_header-logo {
+        margin: 20px 0 0 50px; 
+    }
+
+    .container_header-icone_login_cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container_header-icone_login_cadastro figure{
+        position: fixed;
+        top: 16px;
+        left: 93.5%;
+    }
+
+    .container_header-icone_login_cadastro ul {
+        top: 125%;
+    }
+    
+    .pesquisa_produto {
+        width: 312px;
+        margin: 0;
+        position: fixed;
+        top: 10px;
+        left: 67%;
+    }
+    
+    .pesquisa_produto input {
+        padding:15px 25px;
+    }
+    
+    /*BOTOES FILTRO*/
+
+    .botoes_filtro {
+        margin: 0 0 28px 50px;
+    }
+
+    /*CARD PRODUTOS*/
+
+    .vitrine_cards {
+        margin: 0 23px 8px 50px;
+        max-width: 1030px;
+        flex-wrap: wrap;
+    }
+
+    .vitrine_cards-card {
+        margin:0 10px 52px;
+    }
+
+    .botao-1 {
+        position: absolute;
+        top: 384px; 
+    }
+
+    .botao-2 {
+        position: absolute;
+        top: 384px; 
+        left: 193px;
+    }
+
+}

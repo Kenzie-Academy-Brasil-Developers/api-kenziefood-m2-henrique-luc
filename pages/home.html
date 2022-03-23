@@ -5,19 +5,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="./styles.css/home.css ">
     <title>Home - Kenzie Food</title>
 </head>
 
 <body>
+
+    <header>
+        <div class="container_header">
+            <section class="container_header-logo">
+                <h1>Kenzie</h1>
+                <h2>Food</h2>
+            </section>
+
+            <section class="pesquisa_produto">
+                <figure>
+                    <img src="../assets/icone lupa.svg" alt="lupa">
+                    <figcaption>Icone Lupa</figcaption>
+                </figure>
+                <input type="text" placeholder="Pesquisar por produto">
+            </section>
+
+
+            <section class="container_header-icone_login_cadastro">
+                <figure>
+                    <img src="../assets/Icone perfil.svg" alt="icone perfil">
+                    <figcaption>Icone Perfil</figcaption>
+                    <ul>
+                        <li>
+                            <button>Login</button>
+                        </li>
+                        <li>
+                            <button>Cadastrar</button>
+                        </li>
+                    </ul>
+                </figure>
+            </section>
+        </div>
+    </header>
     <!--- Recebe as mensagens de status -->
     <div id="status"></div>
 
     <!--- Recebe os formulários no formato de modal -->
     <div id="modal"></div>
 
-    <main>
-        <div id="root"></div> <!--- Recebe o conteúdo principal da página -->
-    </main>
+    <div class="container_lateral">
+        <main>
+            <section class="botoes_filtro">
+                <div class="botoes_filtro-todos">
+                    <button>Todos</button>
+                </div>
+
+                <div class="botoes_filtro-panificadora">
+                    <figure>
+                        <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                        <figcaption>Icone Panificadora</figcaption>
+                    </figure>
+                    <button>Panificadora</button>
+                </div>
+
+                <div class="botoes_filtro-frutas">
+                    <figure>
+                        <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                        <figcaption>Icone Frutas</figcaption>
+                    </figure>
+                    <button>Frutas</button>
+                </div>
+
+                <div class="botoes_filtro-bebidas">
+                    <figure>
+                        <img src="../assets/icone bebidas.svg" alt="Icone bebida">
+                        <figcaption>Icone Bebidas</figcaption>
+                    </figure>
+                    <button>Bebidas</button>
+                </div>
+            </section>
+
+            <section class="vitrine_cards">
+                <div class="vitrine_cards-card">
+                    <figure class="vitrine_cards-card-imagem">
+                        <img src="../assets/card exemplo.svg" alt="Panqueca de banana com aveia">
+                        <figcaption>Panqueca de banana com aveia</figcaption>
+                    </figure>
+
+                    <section class="vitrine_cards-botoes">
+                        <div class="vitrine_cards-botoes-filtro botao-1">
+                            <figure>
+                                <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                                <figcaption>Icone Panificadora</figcaption>
+                            </figure>
+                            <button>Panificadora</button>
+                        </div>
+
+                        <div class="vitrine_cards-botoes-filtro botao-2">
+                            <figure>
+                                <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                                <figcaption>Icone Frutas</figcaption>
+                            </figure>
+                            <button>Frutas</button>
+                        </div>
+
+                    </section>
+                    <h3>Panqueca de banana com aveia</h3>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver </p>
+                    <div class="vitrine_cards-card-preco">
+                        <span>R$ 20,00</span>
+                        <button type="button" class="vitrine_cards-card-add-carrinho">
+                            <img src="../assets/icone carrinho.svg" alt="carrinho">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vitrine_cards-card">
+                    <figure class="vitrine_cards-card-imagem">
+                        <img src="../assets/card exemplo.svg" alt="Panqueca de banana com aveia">
+                        <figcaption>Panqueca de banana com aveia</figcaption>
+                    </figure>
+
+                    <section class="vitrine_cards-botoes">
+                        <div class="vitrine_cards-botoes-filtro botao-1">
+                            <figure>
+                                <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                                <figcaption>Icone Panificadora</figcaption>
+                            </figure>
+                            <button>Panificadora</button>
+                        </div>
+
+                        <div class="vitrine_cards-botoes-filtro botao-2">
+                            <figure>
+                                <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                                <figcaption>Icone Frutas</figcaption>
+                            </figure>
+                            <button>Frutas</button>
+                        </div>
+
+                    </section>
+                    <h3>Panqueca de banana com aveia</h3>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver </p>
+                    <div class="vitrine_cards-card-preco">
+                        <span>R$ 20,00</span>
+                        <button type="button" class="vitrine_cards-card-add-carrinho">
+                            <img src="../assets/icone carrinho.svg" alt="carrinho">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vitrine_cards-card">
+                    <figure class="vitrine_cards-card-imagem">
+                        <img src="../assets/card exemplo.svg" alt="Panqueca de banana com aveia">
+                        <figcaption>Panqueca de banana com aveia</figcaption>
+                    </figure>
+
+                    <section class="vitrine_cards-botoes">
+                        <div class="vitrine_cards-botoes-filtro botao-1">
+                            <figure>
+                                <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                                <figcaption>Icone Panificadora</figcaption>
+                            </figure>
+                            <button>Panificadora</button>
+                        </div>
+
+                        <div class="vitrine_cards-botoes-filtro botao-2">
+                            <figure>
+                                <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                                <figcaption>Icone Frutas</figcaption>
+                            </figure>
+                            <button>Frutas</button>
+                        </div>
+
+                    </section>
+                    <h3>Panqueca de banana com aveia</h3>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver </p>
+                    <div class="vitrine_cards-card-preco">
+                        <span>R$ 20,00</span>
+                        <button type="button" class="vitrine_cards-card-add-carrinho">
+                            <img src="../assets/icone carrinho.svg" alt="carrinho">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vitrine_cards-card">
+                    <figure class="vitrine_cards-card-imagem">
+                        <img src="../assets/card exemplo.svg" alt="Panqueca de banana com aveia">
+                        <figcaption>Panqueca de banana com aveia</figcaption>
+                    </figure>
+
+                    <section class="vitrine_cards-botoes">
+                        <div class="vitrine_cards-botoes-filtro botao-1">
+                            <figure>
+                                <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                                <figcaption>Icone Panificadora</figcaption>
+                            </figure>
+                            <button>Panificadora</button>
+                        </div>
+
+                        <div class="vitrine_cards-botoes-filtro botao-2">
+                            <figure>
+                                <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                                <figcaption>Icone Frutas</figcaption>
+                            </figure>
+                            <button>Frutas</button>
+                        </div>
+
+                    </section>
+                    <h3>Panqueca de banana com aveia</h3>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver </p>
+                    <div class="vitrine_cards-card-preco">
+                        <span>R$ 20,00</span>
+                        <button type="button" class="vitrine_cards-card-add-carrinho">
+                            <img src="../assets/icone carrinho.svg" alt="carrinho">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vitrine_cards-card">
+                    <figure class="vitrine_cards-card-imagem">
+                        <img src="../assets/card exemplo.svg" alt="Panqueca de banana com aveia">
+                        <figcaption>Panqueca de banana com aveia</figcaption>
+                    </figure>
+
+                    <section class="vitrine_cards-botoes">
+                        <div class="vitrine_cards-botoes-filtro botao-1">
+                            <figure>
+                                <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                                <figcaption>Icone Panificadora</figcaption>
+                            </figure>
+                            <button>Panificadora</button>
+                        </div>
+
+                        <div class="vitrine_cards-botoes-filtro botao-2">
+                            <figure>
+                                <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                                <figcaption>Icone Frutas</figcaption>
+                            </figure>
+                            <button>Frutas</button>
+                        </div>
+
+                    </section>
+                    <h3>Panqueca de banana com aveia</h3>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver </p>
+                    <div class="vitrine_cards-card-preco">
+                        <span>R$ 20,00</span>
+                        <button type="button" class="vitrine_cards-card-add-carrinho">
+                            <img src="../assets/icone carrinho.svg" alt="carrinho">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vitrine_cards-card">
+                    <figure class="vitrine_cards-card-imagem">
+                        <img src="../assets/card exemplo.svg" alt="Panqueca de banana com aveia">
+                        <figcaption>Panqueca de banana com aveia</figcaption>
+                    </figure>
+
+                    <section class="vitrine_cards-botoes">
+                        <div class="vitrine_cards-botoes-filtro botao-1">
+                            <figure>
+                                <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                                <figcaption>Icone Panificadora</figcaption>
+                            </figure>
+                            <button>Panificadora</button>
+                        </div>
+
+                    </section>
+                    <h3>Panqueca de banana com aveia</h3>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver </p>
+                    <div class="vitrine_cards-card-preco">
+                        <span>R$ 20,00</span>
+                        <button type="button" class="vitrine_cards-card-add-carrinho">
+                            <img src="../assets/icone carrinho.svg" alt="carrinho">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="container_carrinho">
+                <figure>
+                    <img src="../assets/icone carrinho do carrinho.svg" alt="Icone carrinho">
+                    <figcaption>Icone Carrinho</figcaption>
+                </figure>
+                <h3>Carrinho</h3>
+            </section>
+        </aside>
+    </div>
+
     <script type="module" src="./App.js"></script>
 </body>
 
