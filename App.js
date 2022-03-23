@@ -1,25 +1,29 @@
 
-import { Carrinho } from "./assets/models/Carrinho.js"
-import { ProductController } from "./assets/controllers/ProductController.js"
-import { ProductModalView } from "./assets/views/ProductModalView.js"
+// import { Carrinho } from "./assets/models/Carrinho.js"
+// import { ProductController } from "./assets/controllers/ProductController.js"
+// import { ProductModalView } from "./assets/views/ProductModalView.js"
 
-console.log("Oi")
+import { VitrineView } from "./assets/views/VitrineView.js";
 
-await Carrinho.addProduto(2)
-await Carrinho.addProduto(4)
+// console.log("Oi")
 
-const listaCarrinho = await Carrinho.getListaCarrinho()
+// await Carrinho.addProduto(2)
+// await Carrinho.addProduto(4)
 
-const productController = new ProductController(3)
-const productController2 = new ProductController()
-// productController.eventos()
-const productModalView = new ProductModalView(productController)
-productModalView.criarModal()
+// const listaCarrinho = await Carrinho.getListaCarrinho()
+
+// const productController = new ProductController(3)
+// const productController2 = new ProductController()
+// // productController.eventos()
+// const productModalView = new ProductModalView(productController)
+// productModalView.criarModal()
 
 
 
 
-console.log(listaCarrinho)
+// console.log(listaCarrinho)
+
+VitrineView.criaVitrine()
 
     
 

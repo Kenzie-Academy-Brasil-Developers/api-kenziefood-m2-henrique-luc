@@ -52,7 +52,7 @@ figcaption {
 
 .container_header-icone_login_cadastro figure{
     width: 36px;
-    position: fixed;
+    position: absolute;
     top: 16px;
     left: 55%;
 }
@@ -178,6 +178,8 @@ figcaption {
     width: 303px;
     height: 397px;
     margin-right: 40px;
+    margin-top: 1rem;
+    
 }
 
 .vitrine_cards-card h3 {
@@ -191,6 +193,7 @@ figcaption {
     font-weight: 400;
     color: #868E96;
     margin-bottom: 27px;
+    min-height: 80px;
 }
 
 .vitrine_cards-card span {
@@ -203,6 +206,11 @@ figcaption {
     border-radius: 8px;
     width: 300px;
     height: 200px;
+}
+
+.vitrine_cards-card-imagem img {
+    width: 100%;
+    height: 100%;
 }
 
 .vitrine_cards-botoes {
@@ -247,6 +255,7 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  
 }
 
 .vitrine_cards-card-add-carrinho {
@@ -346,6 +355,7 @@ figcaption {
 
     .vitrine_cards-card {
         margin:0 10px 52px;
+
     }
 
     .botao-1 {
@@ -360,3 +370,20 @@ figcaption {
     }
 
 }
+
+
+
+
+
+
+/* HUMBERTO */
+
+.conteudo-produto-categoria {
+    margin-top: -20px;
+    background-color: #FFE9EE;
+    padding: .4rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
