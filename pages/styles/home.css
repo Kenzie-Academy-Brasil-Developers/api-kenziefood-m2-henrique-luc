@@ -456,10 +456,6 @@ figcaption {
     }
 
     .vitrine_cards-card {
-<<<<<<< HEAD
-        margin:0 10px 52px;
-
-=======
         width: 263px;
         height: 397px;
         margin:0 7px 52px;
@@ -474,7 +470,6 @@ figcaption {
     .vitrine_cards-card-imagem img {
         width: 100%;
         border: none;
->>>>>>> feat/pagina-home
     }
 
     .botao-1 {
