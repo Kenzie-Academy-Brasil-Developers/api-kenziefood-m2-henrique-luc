@@ -54,37 +54,39 @@
     <!--- Recebe os formulários no formato de modal -->
     <div id="modal"></div>
 
-    <div class="container_lateral">
-        <main>
-            <section class="botoes_filtro">
-                <div class="botoes_filtro-todos">
-                    <button>Todos</button>
-                </div>
 
-                <div class="botoes_filtro-panificadora">
-                    <figure>
-                        <img src="../assets/Icone pao.svg" alt="icone panificadora">
-                        <figcaption>Icone Panificadora</figcaption>
-                    </figure>
-                    <button>Panificadora</button>
-                </div>
+    <main>
+        <section class="botoes_filtro">
+            <div class="botoes_filtro-todos">
+                <button>Todos</button>
+            </div>
 
-                <div class="botoes_filtro-frutas">
-                    <figure>
-                        <img src="../assets/icone frutas.svg" alt="Icone frutas">
-                        <figcaption>Icone Frutas</figcaption>
-                    </figure>
-                    <button>Frutas</button>
-                </div>
+            <div class="botoes_filtro-panificadora">
+                <figure>
+                    <img src="../assets/Icone pao.svg" alt="icone panificadora">
+                    <figcaption>Icone Panificadora</figcaption>
+                </figure>
+                <button>Panificadora</button>
+            </div>
 
-                <div class="botoes_filtro-bebidas">
-                    <figure>
-                        <img src="../assets/icone bebidas.svg" alt="Icone bebida">
-                        <figcaption>Icone Bebidas</figcaption>
-                    </figure>
-                    <button>Bebidas</button>
-                </div>
-            </section>
+            <div class="botoes_filtro-frutas">
+                <figure>
+                    <img src="../assets/icone frutas.svg" alt="Icone frutas">
+                    <figcaption>Icone Frutas</figcaption>
+                </figure>
+                <button>Frutas</button>
+            </div>
+
+            <div class="botoes_filtro-bebidas">
+                <figure>
+                    <img src="../assets/icone bebidas.svg" alt="Icone bebida">
+                    <figcaption>Icone Bebidas</figcaption>
+                </figure>
+                <button>Bebidas</button>
+            </div>
+        </section>
+
+        <div class="container_lateral">
 
             <section class="vitrine_cards">
                 <div class="vitrine_cards-card">
@@ -283,17 +285,80 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <aside>
-            <section class="container_carrinho">
-                <figure>
-                    <img src="../assets/icone carrinho do carrinho.svg" alt="Icone carrinho">
-                    <figcaption>Icone Carrinho</figcaption>
-                </figure>
-                <h3>Carrinho</h3>
-            </section>
-        </aside>
-    </div>
+
+            <aside>
+                <section class="container_carrinho-top">
+                    <figure>
+                        <img src="../assets/icone carrinho do carrinho.svg" alt="Icone carrinho">
+                        <figcaption>Icone Carrinho</figcaption>
+                    </figure>
+                    <h3>Carrinho</h3>
+                </section>
+
+                <section class="container_carrinho-lista">
+                    <div class="container_carrinho-lista-produto">
+                        <figure class="container_carrinho-lista-produto-imagem">
+                            <img src="../assets/card exemplo.svg" alt="Panqueca">
+                            <figcaption>Panqueca</figcaption>
+                        </figure>
+                        <section class="container_carrinho-lista-produto-descricao">
+                            <h3>Panqueca de banana com aveia</h3>
+                            <p>Panificadora</p>
+                            <span>R$ 20,00</span>
+                        </section>
+                        <figure class="container_carrinho-lista-produto-lixeira">
+                            <img src="../assets/icone lixeira.svg" alt="Icone lixeira">
+                            <figcaption>Icone lixeira</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="container_carrinho-lista-produto">
+                        <figure class="container_carrinho-lista-produto-imagem">
+                            <img src="../assets/card exemplo.svg" alt="Panqueca">
+                            <figcaption>Panqueca</figcaption>
+                        </figure>
+                        <section class="container_carrinho-lista-produto-descricao">
+                            <h3>Panqueca de banana com aveia</h3>
+                            <p>Panificadora</p>
+                            <span>R$ 20,00</span>
+                        </section>
+                        <figure class="container_carrinho-lista-produto-lixeira">
+                            <img src="../assets/icone lixeira.svg" alt="Icone lixeira">
+                            <figcaption>Icone lixeira</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="container_carrinho-lista-produto">
+                        <figure class="container_carrinho-lista-produto-imagem">
+                            <img src="../assets/card exemplo.svg" alt="Panqueca">
+                            <figcaption>Panqueca</figcaption>
+                        </figure>
+                        <section class="container_carrinho-lista-produto-descricao">
+                            <h3>Panqueca de banana com aveia</h3>
+                            <p>Panificadora</p>
+                            <span>R$ 20,00</span>
+                        </section>
+                        <figure class="container_carrinho-lista-produto-lixeira">
+                            <img src="../assets/icone lixeira.svg" alt="Icone lixeira">
+                            <figcaption>Icone lixeira</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="container_carrinho-bottom">
+                    <div class="container_carrinho-bottom-quantidade">
+                        <h3>Quantidade</h3>
+                        <span>5</span>
+                    </div>
+
+                    <div class="container_carrinho-bottom-total">
+                        <h3>Total</h3>
+                        <span>R$ 85,00</span>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
 
     <script type="module" src="./App.js"></script>
 </body>
