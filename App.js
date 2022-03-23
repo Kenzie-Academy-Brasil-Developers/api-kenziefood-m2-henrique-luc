@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { Carrinho } from "./assets/models/Carrinho.js"
 import { ProductController } from "./assets/controllers/ProductController.js"
@@ -18,3 +19,5 @@ console.log(listaCarrinho)
 
     
 
+=======
+>>>>>>> 4da7ae8b15a9c378e4b948dd7ccbefc4dfe01c01
