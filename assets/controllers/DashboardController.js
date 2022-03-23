@@ -6,7 +6,6 @@ const DashboardController = class DashboardController {
         this._iconesDeEdicao    = document.querySelectorAll('icone-edicao');
         this._iconesDeRemocao   = document.querySelectorAll('icone-remocao');
         this._botaoAdicionar    = document.getElementById('botao-dashboard-add');
-        this.eventos();
     }
 
     eventos() {

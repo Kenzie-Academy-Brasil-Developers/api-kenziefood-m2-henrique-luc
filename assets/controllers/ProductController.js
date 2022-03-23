@@ -1,22 +1,22 @@
 const ProductController = class ProductController {
 
-    constructor(produtoId) {
-
-        this._botaoSalvar       = document.getElementById('botao-salvar-alt');
-        this._botaoExcluir      = document.getElementById('botao-excluir');
-        this._botaoAdicionar    = document.getElementById('botao-adicionar');
-        this._produtoId         = produtoId;
-        this.eventos();
+    constructor(produtoId = null) {
+        this._produtoId = produtoId;
     };
 
+    get produtoId() {
+        return this._produtoId;
+    }
 
-    async eventos() {
 
-        if (!this._botaoAdicionar) {
+    eventos() {
+
+
+        if (this._produtoId) {
 
             // EDITAR PRODUTO
-
-            this._botaoSalvar.addEventListener('click', (e) => {
+            const botaoSalvar = document.getElementById('botao-salvar-alt')
+            botaoSalvar.addEventListener('click', (e) => {
                 e.preventDefault();
                 const data = this.getDadosInputs();
                 console.log(data);
@@ -25,24 +25,25 @@ const ProductController = class ProductController {
 
             // EXCLUIR
 
-            this._botaoExcluir.addEventListener('click', (e) => {
+            const botaoExcluir = document.getElementById('botao-excluir')
+            botaoExcluir.addEventListener('click', (e) => {
                 e.preventDefault();
                 const data = this.getDadosInputs();
-                console.log(data);
-
+                console.log(data.id);
                 //Api.excluirProduto(id)
             });
 
         } else {
 
-        //   ADICIONAR PRODUTO
+            //   ADICIONAR PRODUTO
 
-         this._botaoAdicionar.addEventListener('click', (e) => {
-            e.preventDefault();
-            const data = this.getDadosInputs();
-            console.log(data);
-            // Api.adicionarProduto(data)
-        });
+            const botaoCadastrar = document.getElementById('botao-cadastrar-produto')
+            botaoCadastrar.addEventListener('click', (e) => {
+                e.preventDefault();
+                const data = this.getDadosInputs();
+                console.log(data);
+                // Api.adicionarProduto(data)
+            });
 
         };
     };
@@ -56,7 +57,7 @@ const ProductController = class ProductController {
         const imagemDoProduto = document.getElementById('imagem-produto').value;
 
         const arrayDeCategorias = Array.from(document.querySelectorAll('.cadastrar-produtos'));
-        const categoriaDoProduto = arrayDeCategorias.find(e => e.checked).value;
+        // const categoriaDoProduto = arrayDeCategorias.find(e => e.checked).value;
 
         const data = {
             id: this._produtoId,
@@ -64,7 +65,7 @@ const ProductController = class ProductController {
             descricao: descricaoDoProduto,
             valor: valorDoProduto,
             imagem: imagemDoProduto,
-            categoria: categoriaDoProduto
+            // categoria: categoriaDoProduto
         };
 
         return data;
