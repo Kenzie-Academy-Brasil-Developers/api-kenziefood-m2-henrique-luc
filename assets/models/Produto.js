@@ -1,12 +1,12 @@
 const Produto = class Produto {
 
-    constructor(nome, descricao, categoria, preco, imgUrl) {
+    constructor(nome, descricao, categoria, preco, imagem, id) {
         this._nome      = nome;
         this._id        = id;
         this._descricao = descricao;
         this.categoria  = categoria;
         this._preco     = preco;
-        this._imgUrl    = imgUrl;
+        this._imagem    = imagem;
     }
 
     // NOME
@@ -61,12 +61,12 @@ const Produto = class Produto {
 
      // IMAGEM DO PRODUTO
 
-     set imgUrl(imgUrl) {
-        this._imgUrl = imgUrl;
+     set imagem(imagem) {
+        this._imagem = imagem;
     }
 
-    get imgUrl() {
-        return this._imgUrl;
+    get imagem() {
+        return this._imagem;
     }
    
 }
