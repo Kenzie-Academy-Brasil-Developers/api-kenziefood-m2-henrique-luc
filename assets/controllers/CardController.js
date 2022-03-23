@@ -1,6 +1,6 @@
 const CardController = class CardController {
 
-    constructor() {
+    constructor(produtoId) {
         this._button = document.querySelector('.card__botao');
         this.eventos();
     }
