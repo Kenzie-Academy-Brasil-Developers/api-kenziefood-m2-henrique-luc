@@ -506,10 +506,19 @@ figcaption {
         justify-content: center;
         align-items: center;
         border-radius: 12px 12px 0px 0px;
+
     }
 
     .container_carrinho-top h3 {
         font-size: 17px;
         margin-left: 21px;
     }
+}
+
+
+
+/* HUMBERTO */
+
+.botao-lixeira-carrinho {
+    cursor: pointer;
 }

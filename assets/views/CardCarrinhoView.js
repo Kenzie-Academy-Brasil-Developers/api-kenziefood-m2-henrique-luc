@@ -8,7 +8,7 @@ const CardCarrinhoView = class CardCarrinhoView {
 
     template() {
         return `
-        <div class="container_carrinho-lista-produto">
+        <div class="container_carrinho-lista-produto" id=car-${this._produto.id}>
             <figure class="container_carrinho-lista-produto-imagem">
                 <img src=${this._produto.imagem} alt="imagem produto">
                 <figcaption></figcaption>
@@ -18,7 +18,7 @@ const CardCarrinhoView = class CardCarrinhoView {
                 <p>${this._produto.categoria}</p>
                 <span>R$ ${this._produto.preco}</span>
             </section>
-            <figure class="container_carrinho-lista-produto-lixeira">
+            <figure class="container_carrinho-lista-produto-lixeira botao-lixeira-carrinho">
                 <img src="../assets/img/icone lixeira.svg" alt="Icone lixeira">
                 <figcaption>Icone lixeira</figcaption>
             </figure>
