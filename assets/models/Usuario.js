@@ -1,4 +1,6 @@
-const Usuario = class {
+import { loginCadastro } from "../controllers/loginController.js"
+
+const Usuario = class Usuario {
 
     // constructor(token, id, nome, avatarUrl) {
     //     this._token     = token;
@@ -9,6 +11,10 @@ const Usuario = class {
 
     static token = localStorage.getItem('token') || ""
     static id = localStorage.getItem('id') || ""
+
+    static logoutUsuario(){
+        localStorage.removeItem('token')
+    }
 
     // // TOKEN
 
