@@ -1,3 +1,5 @@
+import { ProductModalController } from "../controllers/ProductModalController.js";
+
 const ProductModalView = class ProductModalView {
 
     constructor(productController, tagHtml = "modal") {
@@ -8,12 +10,14 @@ const ProductModalView = class ProductModalView {
     async criarModal() {
 
         const html = document.getElementById(this._tagHtml);
+        html.style.display = "flex"
 
         if(this._productController.produtoId) {
 
             html.innerHTML = "" ;
             html.innerHTML += this._templateEdit();
             this._productController.eventos();
+          
 
         }else {
             html.innerHTML = "" ;
@@ -29,10 +33,10 @@ const ProductModalView = class ProductModalView {
 
         <div class="form-cadastro__titulo">
             <h3>Edição de produto</h3>
-            <button>x</button>
+            <button id="modal-botao-fechar">x</button>
         </div>
 
-        <form action="">
+        <form>
             <label for="nome">Nome do produto</label>
             <input type="text" name="nome" placeholder="Nome do produto" id="nome-produto" />
 
@@ -50,8 +54,8 @@ const ProductModalView = class ProductModalView {
                     <input type="checkbox" class="cadastrar-produtos" id="check-frutas" name="frutas" value="frutas">
                     <label for="frutas">Frutas</label>
 
-                    <input type="checkbox" class="cadastrar-produtos" id="check-bebidas" name="check_3" value="check_3">
-                    <label for="check_3">Bebidas</label>
+                    <input type="checkbox" class="cadastrar-produtos" id="check-bebidas" name="bebidas" value="bebidas">
+                    <label for="bebidas">Bebidas</label>
 
                 </div>
             </div>
@@ -79,10 +83,10 @@ const ProductModalView = class ProductModalView {
 
         <div class="form-cadastro__titulo">
             <h3>Cadastro de produto</h3>
-            <button>x</button>
+            <button id="modal-botao-fechar">x</button>
         </div>
 
-        <form action="">
+        <form>
             <label for="nome">Nome do produto</label>
             <input type="text" name="nome" placeholder="Nome do produto" id="nome-produto" />
 

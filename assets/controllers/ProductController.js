@@ -11,6 +11,7 @@ const ProductController = class ProductController {
 
     eventos() {
 
+        const tagModal = document.getElementById('modal')
 
         if (this._produtoId) {
 
@@ -46,6 +47,12 @@ const ProductController = class ProductController {
             });
 
         };
+
+        const botaoFechar = document.getElementById('modal-botao-fechar')
+        botaoFechar.addEventListener('click', () => {
+            tagModal.style.display = "none";
+            
+        })
     };
 
 
