@@ -1,4 +1,5 @@
 import { Api } from "../api/Api.js"
+import { AdminControllers } from "../controllers/AdminController.js";
 import { CardDashboard } from "./CardDashboardView.js";
 
 
@@ -13,6 +14,8 @@ const DashboardView = class DashboardView {
             const card = new CardDashboard(produto)
             tagHtml.innerHTML += card.template()
         });
+
+        AdminControllers.eventos();
     }
 }
 
