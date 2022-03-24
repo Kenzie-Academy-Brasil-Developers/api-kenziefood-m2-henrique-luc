@@ -11,6 +11,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="./styles/home.css ">
+    <link rel="stylesheet" href="./styles/loginUsuario.css">
+    <link rel="stylesheet" href="./styles/cadastroUsuario.css">
     <title>Home - Kenzie Food</title>
 </head>
 
@@ -38,10 +40,16 @@
                     <figcaption>Icone Perfil</figcaption>
                     <ul>
                         <li>
-                            <button>Login</button>
+                            <button id="login">Login</button>
                         </li>
                         <li>
-                            <button>Cadastrar</button>
+                            <button id="cadastro">Cadastrar</button>
+                        </li>
+                        <li>
+                            <a class="container_header-icone_login_cadastro_ancora-admim" id="ancoraAdmim" href="">Pagina admin</a>
+                        </li>
+                        <li>
+                            <button class="container_header-icone_login_cadastro_logout" id="logout">Logout</button>
                         </li>
                     </ul>
                 </figure>
@@ -52,7 +60,7 @@
     <div id="status"></div>
 
     <!--- Recebe os formulários no formato de modal -->
-    <div id="modal"></div>
+    <div class="modal" id="modal"></div>
 
 
     <main>

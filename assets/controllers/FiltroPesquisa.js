@@ -4,7 +4,7 @@ import { VitrineView } from "../views/VitrineView.js"
 const FiltroPesquisa = class Pesquisa {
 
     static async pesquisa(input) {
-
+        
         const inputValue = input.value.toLowerCase();
 
         const listaProdutos = await Vitrine.listaDeProdutos;
