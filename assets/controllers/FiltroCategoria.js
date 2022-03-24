@@ -1,4 +1,5 @@
 import { Vitrine } from "../models/Vitrine.js";
+import { VitrineView } from "../views/VitrineView.js"
 
 const FiltroCategoria = class FiltroCategoria {
 
@@ -8,18 +9,20 @@ const FiltroCategoria = class FiltroCategoria {
 
         const button = botao.children[1]
         const buttonValue = button.innerText
+
+        let produtosInclusos = []
   
         for(const produtos of listaProdutos){
             const categoria = await produtos.categoria
             
-            const produtosFiltrados = listaProdutos.filter(() => {
-                if(categoria === buttonValue){
-                    console.log('oi')
-                }
-            })
-
-           
+            const includesCategoria = await categoria.includes(buttonValue)
+            
+            if(includesCategoria){
+                produtosInclusos.push(produtos)
+            }
         }
+
+        VitrineView.criaVitrine(produtosInclusos)
     }
 }
 

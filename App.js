@@ -1,13 +1,14 @@
-import { FiltroPesquisa } from "./controllers/FiltroPesquisa.js"
+//import { FiltroPesquisa } from ""
 import { VitrineController } from "./assets/controllers/VitrineController.js";
 import { Carrinho } from "./assets/models/Carrinho.js";
 import { VitrineView } from "./assets/views/VitrineView.js";
+import { Vitrine } from "./assets/models/Vitrine.js"
 
 
-await FiltroPesquisa.pesquisa()
+//FiltroPesquisa.pesquisa()
 
 await VitrineView.criaVitrine()
-// await VitrineView.pesquisaVitrine('morango')
+//await VitrineView.pesquisaVitrine('morango')
 // await VitrineController.eventos()
 
 // await Carrinho.addProduto(3)

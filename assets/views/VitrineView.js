@@ -6,14 +6,17 @@ import { VitrineController } from "../controllers/VitrineController.js";
 const VitrineView = class VitrineView {
 
 
-    static async criaVitrine() {
+    static async criaVitrine(lista) {
 
-        const listaDeProdutos = await Vitrine.listaDeProdutos;
+        if(lista === undefined){
+            lista = await Vitrine.listaDeProdutos;
+        }
+
         const tagHtml = document.getElementById('vitrine-cards');
-        console.log(tagHtml)
+        //console.log(tagHtml)
         tagHtml.innerHTML = "";
 
-        listaDeProdutos.forEach(produto => {
+        lista.forEach(produto => {
 
                 const {
                     nome, 
