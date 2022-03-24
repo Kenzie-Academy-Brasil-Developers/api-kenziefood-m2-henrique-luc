@@ -146,6 +146,19 @@ figcaption {
     outline: 0;
 }
 
+/* MODAL */
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
 /*BOTOES FILTRO*/
 
 .botoes_filtro {

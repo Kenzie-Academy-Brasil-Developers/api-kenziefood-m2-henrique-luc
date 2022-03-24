@@ -37,7 +37,7 @@ const LogoutUsuario = class LogoutUsuario{
 
     setaBotao(){
         const element = document.getElementById(this._id)
-        
+        console.log("aqui")
         element.addEventListener("click", e =>{
             this.desloga(element)
         })
@@ -52,6 +52,12 @@ const LogoutUsuario = class LogoutUsuario{
         elementCadastro.style.display = "flex"
         elementAncoraAdmimId.style.display = "none"
         element.style.display = "none"
+    }
+    constroiBotaoLogin(){
+        const elementLogin = document.getElementById(this._loginId)
+        const elementCadastro = document.getElementById(this._cadastroId)
+        elementLogin.style.display = "flex"
+        elementCadastro.style.display = "flex"
     }
 }
 
