@@ -33,7 +33,6 @@ const Api = class Api {
     }
 
 
-
     static async login(email, senha) {
 
         const data = {
@@ -42,8 +41,7 @@ const Api = class Api {
         };
 
       
-        const response = await fetch(`${Api.PATH}/auth/login`, 
-        
+        const response = await fetch(`${Api.PATH}/auth/login`,         
         {
             'method': 'POST',
             'headers': {
@@ -56,12 +54,12 @@ const Api = class Api {
 
         if(token) {
             localStorage.setItem('token', token);
-            console.log('Token criado')
+            console.log('Token criado');
         } else {
-            console.log('Token não criado')
+            console.log('Token não criado');
         }
             
     }
 }
 
-export { Api }
+export { Api };
