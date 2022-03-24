@@ -22,6 +22,18 @@ const Carrinho = class Carrinho {
     static getListaCarrinho() {
         return this.listaCarrinho
     }
+
+    static quantidade() {
+        return this.listaCarrinho.length;
+    }
+
+    static valorTotal() {
+
+        const total = this.listaCarrinho
+                        .reduce((acc, cur) => acc + cur.preco , 0);
+
+        return total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    }
 }
 
 export { Carrinho };
