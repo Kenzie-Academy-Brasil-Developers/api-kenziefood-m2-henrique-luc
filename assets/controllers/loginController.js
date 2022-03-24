@@ -1,4 +1,5 @@
 import { Modal } from "../models/Modal.js";
+//const loginHtml
 const login = new Modal("telaLogin", );
 const cadastro = new Modal("telaCadastro", );
 
@@ -19,7 +20,9 @@ const loginCadastro = class loginCadastro{
             callOne
             callTwo
             const logout = document.getElementById("logout")
+            const ancoraAdmim = document.getElementById("ancoraAdmim")
 
+            ancoraAdmim.style.display = "flex"
             logout.style.display = "flex"
         }
     }
