@@ -10,6 +10,10 @@ const Usuario = class {
     static token = localStorage.getItem('token') || ""
     static id = localStorage.getItem('id') || ""
 
+    static get token() {
+        return this.token;
+    }
+
     // // TOKEN
 
     // set token(token) {
