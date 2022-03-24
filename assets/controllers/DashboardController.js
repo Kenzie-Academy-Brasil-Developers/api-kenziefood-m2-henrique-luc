@@ -3,9 +3,10 @@ import { ProductController } from "./ProductController.js";
 const DashboardController = class DashboardController {
 
     constructor() {
-        this._iconesDeEdicao    = document.querySelectorAll('icone-edicao');
-        this._iconesDeRemocao   = document.querySelectorAll('icone-remocao');
-        this._botaoAdicionar    = document.getElementById('botao-dashboard-add');
+        this._iconesDeEdicao = document.querySelectorAll('icone-edicao');
+        this._iconesDeRemocao = document.querySelectorAll('icone-remocao');
+        this._botaoAdicionar = document.getElementById('adicionar-novo-produto');
+        // this._tagModal = document.getElementById('')
     }
 
     eventos() {
@@ -14,6 +15,7 @@ const DashboardController = class DashboardController {
         // ADD EVENTOS NOS ICONES DE EDICAO
 
         this._botaoAdicionar.addEventListener('click', () => {
+            console.log("Entrou")
             // AddProductView.create();
             const productController = new ProductController();
             console.log(productController);

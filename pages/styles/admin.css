@@ -1,3 +1,8 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
 ul, li{
     padding: 0px;
     margin: 0px;
@@ -396,3 +401,16 @@ span{
     }
     
 }
+
+
+#modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
