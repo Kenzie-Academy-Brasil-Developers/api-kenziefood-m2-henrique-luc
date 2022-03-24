@@ -191,6 +191,7 @@ figcaption {
     font-weight: 400;
     color: #868E96;
     margin-bottom: 27px;
+    min-height: 80px;
 }
 
 .vitrine_cards-card span {
