@@ -29,7 +29,7 @@ const VitrineView = class VitrineView {
            
         })
 
-        await VitrineController.eventos()
+        VitrineController.eventos()
     }  
 
 }

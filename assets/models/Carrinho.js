@@ -4,18 +4,22 @@ const Carrinho = class Carrinho {
 
     static listaCarrinho = [];
 
-    static async addProduto(cardId) {
+    // static async addProduto(cardId) {
 
-        const listaDeProdutos = await Vitrine.listaDeProdutos;
+    //     const listaDeProdutos = await Vitrine.listaDeProdutos;
         
-        listaDeProdutos.forEach(produto => {
-            // console.log(produto)
-            if(produto.id === cardId)
-                this.listaCarrinho.push(produto);
-        })       
+    //     listaDeProdutos.forEach(produto => {
+    //         // console.log(produto)
+    //         if(produto.id === cardId)
+    //             this.listaCarrinho.push(produto);
+    //     })       
+    // }
+
+    static addProduto(produto) {
+        this.listaCarrinho.push(produto);
     }
 
-    static async getListaCarrinho() {
+    static getListaCarrinho() {
         return this.listaCarrinho
     }
 }
