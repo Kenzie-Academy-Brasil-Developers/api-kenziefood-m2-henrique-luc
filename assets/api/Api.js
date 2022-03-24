@@ -61,6 +61,52 @@ const Api = class Api {
 
     }
 
+    static async cadastrarProduto(data) {
+
+        const response = await fetch(`${Api.PATH}/my/products`,
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${Usuario.token}`
+                },
+                body: JSON.stringify(data)
+            });
+
+        console.log(response)
+    }
+
+
+    static async editarProduto(data, id) {
+
+        const response = await fetch(`${Api.PATH}/my/products/${id}`,
+            {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${Usuario.token}`
+                },
+                body: JSON.stringify(data)
+            });
+
+        console.log(response)
+    }
+
+
+
+    static async excluirProduto(id) {
+
+        const response = await fetch(`${Api.PATH}/my/products/${id}`,
+            {
+                method: 'DELETE',
+                headers: {
+                    'Authorization': `Bearer ${Usuario.token}`
+                }
+            });
+
+        console.log(response)
+    }
+
 }
 
 export { Api };
