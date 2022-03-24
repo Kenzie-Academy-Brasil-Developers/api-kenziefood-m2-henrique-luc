@@ -1,3 +1,5 @@
+import { Produto } from "../models/Produto.js";
+
 const CardCarrinhoView = class CardCarrinhoView {
 
     constructor({nome, descricao, categoria, preco, imagem, id}) {
@@ -14,7 +16,7 @@ const CardCarrinhoView = class CardCarrinhoView {
             <section class="container_carrinho-lista-produto-descricao">
                 <h3>${this._produto.nome}</h3>
                 <p>${this._produto.categoria}</p>
-                <span>R$ R${this._produto.preco}</span>
+                <span>R$ ${this._produto.preco}</span>
             </section>
             <figure class="container_carrinho-lista-produto-lixeira">
                 <img src="../assets/img/icone lixeira.svg" alt="Icone lixeira">

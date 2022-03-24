@@ -1,5 +1,7 @@
 import { Carrinho } from "../models/Carrinho.js";
+import { Produto } from "../models/Produto.js";
 import { Vitrine } from "../models/Vitrine.js";
+import { CarrinhoView } from "../views/CarrinhoView.js";
 
 
 const VitrineController = class VitrineController {
@@ -17,10 +19,12 @@ const VitrineController = class VitrineController {
                 console.log(produtoId);
 
                 const lista = await Vitrine.listaDeProdutos;
-                const produto = lista.find(p => parseInt(p.id) === parseInt(produtoId));
-
-                Carrinho.addProduto(produto);
-                console.log(Carrinho.getListaCarrinho());                
+                const produtoObj = lista.find(p => parseInt(p.id) === parseInt(produtoId));
+               
+                Carrinho.addProduto(produtoObj);
+                // console.log(Carrinho.getListaCarrinho()); 
+                
+                CarrinhoView.criaTemplate()
 
             })
         });
