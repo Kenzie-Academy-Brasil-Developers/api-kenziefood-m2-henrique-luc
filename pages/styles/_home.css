@@ -68,10 +68,6 @@ figcaption {
     position: absolute;
     top: 102%;
     left: -348%;
-    display: flex
-}
-
-.container_header-icone_login_cadastro_logout{
     display: none;
 }
 
