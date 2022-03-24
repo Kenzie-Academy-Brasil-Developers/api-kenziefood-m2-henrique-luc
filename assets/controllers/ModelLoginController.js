@@ -2,6 +2,7 @@ import { LogoutUsuario } from "./logoutController.js"
 import { login } from "./LoginController.js"
 import { loginCadastro } from "./LoginController.js"
 import { loginBotao, cadastroBotao } from "../../App.js"
+import { Api } from "../api/Api.js"
 
 const TelaLogin = class TelaLogin{
     constructor(fecharId, inputEmailId, inputSenhaId, botoaLogarId){

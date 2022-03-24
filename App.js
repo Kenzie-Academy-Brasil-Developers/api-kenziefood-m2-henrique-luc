@@ -22,7 +22,7 @@ loginCadastro.verificaStatus(loginBotao.apagaBotao(), cadastroBotao.apagaBotao()
 
 //FiltroPesquisa.pesquisa()
 
-await VitrineView.criaVitrine(Vitrine.listaDeProdutos)
+await VitrineView.criaVitrine()
 //await VitrineView.pesquisaVitrine('morango')
 // await VitrineController.eventos()
 
