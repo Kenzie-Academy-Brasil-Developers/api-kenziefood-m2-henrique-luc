@@ -12,8 +12,13 @@ const Usuario = class Usuario {
     static token = localStorage.getItem('token') || ""
     static id = localStorage.getItem('id') || ""
 
+<<<<<<< HEAD
     static logoutUsuario(){
         localStorage.removeItem('token')
+=======
+    static get token() {
+        return this.token;
+>>>>>>> develop
     }
 
     // // TOKEN

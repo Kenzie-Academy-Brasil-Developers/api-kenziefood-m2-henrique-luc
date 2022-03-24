@@ -9,8 +9,8 @@ const Api = class Api {
 
     static async getProdutosPublicos() {
 
-        const response  = await fetch(`${Api.PATH}/products`);
-        const data      = await response.json();
+        const response = await fetch(`${Api.PATH}/products`);
+        const data = await response.json();
 
         return data;
     }
@@ -21,12 +21,12 @@ const Api = class Api {
     static async getProdutosPrivados() {
 
         const response = await fetch(`${Api.PATH}/my/products`,
-        {
-            method: 'GET',
-            headers: {
-                'Authorization':`Bearer ${Usuario.token}`
-            }
-        });
+            {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${Usuario.token}`
+                }
+            });
         const data = await response.json();
 
         return data;
@@ -40,26 +40,27 @@ const Api = class Api {
             password: senha
         };
 
-      
-        const response = await fetch(`${Api.PATH}/auth/login`,         
-        {
-            'method': 'POST',
-            'headers': {
-                'Content-Type': 'application/json'
-            },
-            'body': JSON.stringify(data)
-        });
+
+        const response = await fetch(`${Api.PATH}/auth/login`,
+            {
+                'method': 'POST',
+                'headers': {
+                    'Content-Type': 'application/json'
+                },
+                'body': JSON.stringify(data)
+            });
 
         const token = await response.json();
 
-        if(token) {
+        if (token) {
             localStorage.setItem('token', token);
             console.log('Token criado');
         } else {
             console.log('Token não criado');
         }
-            
+
     }
+
 }
 
 export { Api };
