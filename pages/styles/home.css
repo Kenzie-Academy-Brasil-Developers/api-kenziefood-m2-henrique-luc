@@ -9,6 +9,8 @@ header,main {
 
 main {
     padding-top: 174px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 figcaption {
@@ -16,6 +18,7 @@ figcaption {
 }
 
 .container_header {
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -174,10 +177,13 @@ figcaption {
 }
 
 .vitrine_cards-card {
+   
     font-family: 'Poppins', sans-serif;
     width: 303px;
-    height: 397px;
+    min-height: 397px;
+    max-height: 400px;
     margin-right: 40px;
+    
 }
 
 .vitrine_cards-card h3 {
@@ -191,7 +197,8 @@ figcaption {
     font-weight: 400;
     color: #868E96;
     margin-bottom: 27px;
-    min-height: 80px;
+    height: 80px;
+    
 }
 
 .vitrine_cards-card span {
@@ -245,9 +252,11 @@ figcaption {
 }
 
 .vitrine_cards-card-preco {
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .vitrine_cards-card-add-carrinho {
@@ -453,6 +462,7 @@ figcaption {
         margin:0 7px 52px;
     }
 
+
     .vitrine_cards-card-imagem {
         width: 263px;
         height: 160px;
@@ -463,6 +473,12 @@ figcaption {
         width: 100%;
         border: none;
     }
+
+    .vitrine_cards-card-preco {
+        justify-self: end;
+        margin-bottom: 20px;
+    }
+
 
     .botao-1 {
         position: absolute;
