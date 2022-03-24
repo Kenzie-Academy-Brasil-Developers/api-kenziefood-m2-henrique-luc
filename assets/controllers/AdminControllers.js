@@ -1,7 +1,8 @@
 const AdminControllers = class AdminControllers {
 
-    static addEventosExcluir() {
 
+    static addEventosExcluir() {
+        
     }
 
     static addEventosEditar() {
