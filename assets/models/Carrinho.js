@@ -17,6 +17,7 @@ const Carrinho = class Carrinho {
 
     static addProduto(produto) {
         this.listaCarrinho.push(produto);
+        localStorage.setItem('carrinho', JSON.stringify(this.listaCarrinho));
     }
 
     static getListaCarrinho() {
