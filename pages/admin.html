@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/admin.css">
     <link rel="stylesheet" href="./styles/cadastro.css">
     <link rel="stylesheet" href="./styles/cadastro2.css">
@@ -12,12 +16,15 @@
 </head>
 
 <body>
+
     <header>
+
         <div class="container_header">
             <section class="container_header-logo">
                 <h1>Kenzie</h1>
                 <h2>Food</h2>
             </section>
+
             <section class="pesquisa_produto">
                 <figure>
                     <img src="../assets/img/icone lupa.svg" alt="lupa">
@@ -25,19 +32,35 @@
                 </figure>
                 <input type="text" placeholder="Pesquisar por produto">
             </section>
+
+
             <section class="container_header-icone_login_cadastro">
                 <figure>
                     <img src="../assets/img/Icone perfil.svg" alt="icone perfil">
                     <figcaption>Icone Perfil</figcaption>
-                    <ul>
-                        <li>
-                            <button id="logout">Logout</button>
-                        </li>
-                    </ul>
                 </figure>
+
+                <section class="container_header-icone_login_cadastro">
+                    <figure>
+                        <img src="../assets/img/Icone perfil.svg" alt="icone perfil">
+                        <figcaption>Icone Perfil</figcaption>
+                        <ul>
+                            <li>
+                                <button id="logout">Logout</button>
+                            </li>
+                        </ul>
+                    </figure>
+                </section>
+
+                <section class="container_header-botao-home">
+                    <button>Home</button>
+                </section>
+
             </section>
         </div>
+
     </header>
+
     <!--- Recebe as mensagens de status -->
     <div id="status"></div>
 
@@ -45,58 +68,54 @@
     <div id="modal"></div>
 
     <main>
-        
-        
-        <div id="root" class="root">
-            <section class="botoes">
-                <section class="botoes__botoes_filtro">
-                    <div class="botoes__botoes_filtro-todos">
-                        <button>Todos</button>
-                    </div>
-                     <div class="botoes__botoes_filtro-panificadora">
-                         
-                        <button>
-                            <!-- <figure> -->
-                                <img src="../assets/img/Icone pao.svg" alt="icone panificadora">
-                                <!-- <figcaption>Icone Panificadora</figcaption> -->
-                            <!-- </figure>  -->
-                            Panificadora
-                        </button>
-                     </div>
-                     <div class="botoes__botoes_filtro-frutas">
-                        
-                        <button>
-                            <!-- <figure> -->
-                                <img src="../assets/img/icone frutas.svg" alt="Icone frutas">
-                                <!-- <figcaption>Icone Frutas</figcaption> -->
-                            <!-- </figure> -->
-                            Frutas
-                        </button>
-                    </div>
-                    <div class="botoes__botoes_filtro-bebidas">
-                        
-                        <button>
-                            <!-- <figure> -->
-                            <img src="../assets/img/icone bebidas.svg" alt="Icone bebida">
-                            <!-- <figcaption>Icone Bebidas</figcaption> -->
-                        <!-- </figure> -->
-                        Bebidas
-                        </button>
-                    </div>
-                </section>
-                <section class="botoes__botao-adicionar">
-                    <button id="adicionar-novo-produto">Adicionar novo produto</button>
-                </section>
+
+        <section class="container_filtros-botoes">
+            <section class="botoes_filtro">
+                <div class="botoes_filtro-todos">
+                    <button>Todos</button>
+                </div>
+
+                <div class="botoes_filtro-panificadora">
+                    <figure>
+                        <img src="../assets/img/Icone pao.svg" alt="icone panificadora">
+                        <figcaption>Icone Panificadora</figcaption>
+                    </figure>
+                    <button>Panificadora</button>
+                </div>
+
+                <div class="botoes_filtro-frutas">
+                    <figure>
+                        <img src="../assets/img/icone frutas.svg" alt="Icone frutas">
+                        <figcaption>Icone Frutas</figcaption>
+                    </figure>
+                    <button>Frutas</button>
+                </div>
+
+                <div class="botoes_filtro-bebidas">
+                    <figure>
+                        <img src="../assets/img/icone bebidas.svg" alt="Icone bebida">
+                        <figcaption>Icone Bebidas</figcaption>
+                    </figure>
+                    <button>Bebidas</button>
+                </div>
             </section>
-            <div class="admim">
-                <ul class="admim__index">
-                    <li>Produtos</li>
-                    <li>Categoria</li>
-                    <li>Descrição</li>
-                    <li>Ações</li>
-                </ul>
-                <ul class="admim__box-lista" id="admin__box-lista"></ul>
-            </div>
+
+            <section class="botoes__botao-adicionar">
+                <button id="adicionar-novo-produto">Adicionar novo produto</button>
+            </section>
+        </section>
+        <div class="admim">
+            <ul class="admim__index">
+                <li>Produtos</li>
+                <li>Categoria</li>
+                <li>Descrição</li>
+                <li>Ações</li>
+            </ul>
+        </div>
+        <div id="root" class="root">
+            <ul class="admim__box-lista" id="admin__box-lista">
+
+            </ul>
         </div>
         <!--- Recebe o conteúdo principal da página -->
     </main>

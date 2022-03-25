@@ -10,7 +10,7 @@ const CardDashboard = class CardDashboardView {
                 <img width="32" height="32" src=${this._produto.imagem } alt="">
                 <h4>${this._produto.nome} </h4>
                 <p><span>${this._produto.categoria}</span></p>
-                <p>${this._produto.descricao}</p>
+                <p class= "descricao-card-admin">${this._produto.descricao}</p>
 
                 <div>
                     <svg width="14" height="13"  class="editar-produto admim__box-lista__lista__botao-alterar" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
