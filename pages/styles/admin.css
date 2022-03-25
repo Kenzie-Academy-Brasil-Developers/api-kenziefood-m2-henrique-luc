@@ -255,6 +255,54 @@ span{
     height: 20px;
 }
 
+
+/* MODAL EXCLUIR */
+
+
+.modal-excluir {
+    width: 300px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.modal-excluir__header {
+    border-radius: 24px 24px 0 0;
+    height: 30px;
+    padding: 2rem;
+    background-color: #E9ECEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-excluir__botoes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+   
+}
+
+.modal-excluir__botoes button {
+    background-color: #fafafa;
+    margin: 1rem;
+    height: 40px;
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    border-radius: 26px;
+
+}
+
+.botao-excluir-modal {
+    background-color: #F8F9FA;
+    height: 30px;
+    margin: 1rem;
+
+}
+
 @media screen and (min-width: 769px) {
     .container_lateral {
     }
