@@ -26,6 +26,14 @@ const ProductModalView = class ProductModalView {
         }
     }
 
+    async criarModalExcluir() {
+        const html = document.getElementById(this._tagHtml);
+        html.style.display = "flex"
+        html.innerHTML = "" ;
+        html.innerHTML += this._templateExcluir();
+        this._productController.eventos();
+    }
+
     _templateEdit() {
         return `
 
@@ -122,6 +130,28 @@ const ProductModalView = class ProductModalView {
         </form>
 
     </section>`
+    }
+
+    _templateExcluir() {
+
+        return `
+        <section class="form-cadastro excluir">
+
+        <div class="form-cadastro__titulo">
+            <h3>Deseja excluir produto?</h3>
+            <button id="modal-botao-fechar">x</button>
+        </div>
+
+        <form>
+
+            <div class="form-cadastro__botoes">
+                <button id="botao-excluir">Sim</button>
+                <button id="botao-excluir-nao">Não</button>
+            </div>
+        </form>
+
+    </section>`
+        
     }
 }
 

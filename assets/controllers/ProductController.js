@@ -20,24 +20,35 @@ const ProductController = class ProductController {
         if (this._produtoId) {
 
             // EDITAR PRODUTO
-            const botaoSalvar = document.getElementById('botao-salvar-alt')
-            botaoSalvar.addEventListener('click', async (e) => {
-                e.preventDefault();
-                const data = this.getDadosInputs();
-                console.log(data, this._produtoId);
-                await Api.editarProduto(data, this._produtoId)
-                await DashboardView.criaTemplate()
-            });
+            if (document.getElementById('botao-salvar-alt')) {
+
+                const botaoSalvar = document.getElementById('botao-salvar-alt')
+                botaoSalvar.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    const data = this.getDadosInputs();
+                    console.log(data, this._produtoId);
+                    await Api.editarProduto(data, this._produtoId)
+                    await DashboardView.criaTemplate()
+                    tagModal.style.display = "none";
+                });
+            }
 
             // EXCLUIR
 
             const botaoExcluir = document.getElementById('botao-excluir')
             botaoExcluir.addEventListener('click', async (e) => {
+                console.log("entrou")
                 e.preventDefault();
-                console.log(this._produtoId)
-                await Api.excluirProduto(this._produtoId)
-                await DashboardView.criaTemplate()
+                console.log(this._produtoId);
+                await Api.excluirProduto(this._produtoId);
+                await DashboardView.criaTemplate();
+                tagModal.style.display = "none";       
             });
+
+            const botaoNao = document.getElementById('botao-excluir-nao')
+            botaoNao.addEventListener('click', () => tagModal.style.display = "none")
+
+            
 
         } else {
 
@@ -48,17 +59,21 @@ const ProductController = class ProductController {
                 e.preventDefault();
                 const data = this.getDadosInputs();
                 console.log(data);
-                await Api.cadastrarProduto(data)
-                await DashboardView.criaTemplate()
+                await Api.cadastrarProduto(data);
+                await DashboardView.criaTemplate();
+                tagModal.style.display = "none";
             });
 
         };
 
+       
         const botaoFechar = document.getElementById('modal-botao-fechar')
         botaoFechar.addEventListener('click', () => {
             tagModal.style.display = "none";
-            
+
         })
+
+
     };
 
 
@@ -80,23 +95,24 @@ const ProductController = class ProductController {
             categoria: "comida"
         };
 
-        if(!data.nome)
+        if (!data.nome)
             delete data.nome;
 
-        if(!data.descricao)
+        if (!data.descricao)
             delete data.descricao;
 
-        if(!data.preco)
+        if (!data.preco)
             delete data.preco;
-            
-        if(!data.imagem)
+
+        if (!data.imagem)
             delete data.imagem;
 
-        if(!data.categoria)
+        if (!data.categoria)
             delete data.categoria;
 
         return data;
     }
+
 
 }
 

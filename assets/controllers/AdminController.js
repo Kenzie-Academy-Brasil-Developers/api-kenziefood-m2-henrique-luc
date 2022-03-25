@@ -36,7 +36,7 @@ const AdminControllers = class AdminControllers {
                 // modal.abreModal()
 
                 const productModal = new ProductModalView(productController);
-                productModal.criarModal();
+                productModal.criarModalExcluir();
             })
         });
 
