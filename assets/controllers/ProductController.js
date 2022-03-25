@@ -1,4 +1,6 @@
 import { Api } from "../api/Api.js";
+import { MensagemDeStatus } from "../models/MensagemDeStatus.js";
+import {MensagemDeStatusView} from "../views/MensagemDeStatusView.js"
 import { DashboardView } from "../views/DashboardView.js";
 
 
@@ -25,12 +27,16 @@ const ProductController = class ProductController {
                 const botaoSalvar = document.getElementById('botao-salvar-alt')
                 botaoSalvar.addEventListener('click', async (e) => {
                     e.preventDefault();
+                    alert("editou")
                     const data = this.getDadosInputs();
                     console.log(data, this._produtoId);
                     await Api.editarProduto(data, this._produtoId)
                     await DashboardView.criaTemplate()
                     tagModal.innerHTML = "";
                     tagModal.style.display = "none";
+                    const texto = "Produto alterado com sucesso"
+                    const mensagem = new MensagemDeStatus(texto, true);
+                    MensagemDeStatusView.abreMensagem(mensagem);
                 });
             }
 
