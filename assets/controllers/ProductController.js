@@ -29,6 +29,7 @@ const ProductController = class ProductController {
                     console.log(data, this._produtoId);
                     await Api.editarProduto(data, this._produtoId)
                     await DashboardView.criaTemplate()
+                    tagModal.innerHTML = "";
                     tagModal.style.display = "none";
                 });
             }
@@ -42,13 +43,20 @@ const ProductController = class ProductController {
                 console.log(this._produtoId);
                 await Api.excluirProduto(this._produtoId);
                 await DashboardView.criaTemplate();
-                tagModal.style.display = "none";       
+                tagModal.innerHTML = "";
+                tagModal.style.display = "none";
             });
 
-            const botaoNao = document.getElementById('botao-excluir-nao')
-            botaoNao.addEventListener('click', () => tagModal.style.display = "none")
+            if (document.getElementById('botao-excluir-nao')) {
+                const botaoNao = document.getElementById('botao-excluir-nao')
+                botaoNao.addEventListener('click', () => {
+                    tagModal.innerHTML = "";
+                    tagModal.style.display = "none"
+                })
+            }
 
-            
+
+
 
         } else {
 
@@ -61,17 +69,19 @@ const ProductController = class ProductController {
                 console.log(data);
                 await Api.cadastrarProduto(data);
                 await DashboardView.criaTemplate();
+                tagModal.innerHTML = "";
                 tagModal.style.display = "none";
             });
 
         };
 
-       
         const botaoFechar = document.getElementById('modal-botao-fechar')
         botaoFechar.addEventListener('click', () => {
+            tagModal.innerHTML = "";
             tagModal.style.display = "none";
 
         })
+
 
 
     };
