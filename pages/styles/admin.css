@@ -536,3 +536,59 @@ span{
     display: none;
 }
 
+#status {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+    
+}
+
+div.mensagem-status {
+    position: relative;
+    width: 300px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+div.mensagem-status p {
+    margin-top: 2.7rem;
+    padding: 1rem;
+    color:#868E96
+
+}
+
+.status-titulo {
+    position: absolute;
+    top:0;
+    padding: .7rem;
+    background-color: #ebebeb;
+    width: 100%;
+    justify-self: start;
+    color:#212529;
+    font-weight: bold;
+}
+
+.mensagem-sucesso {
+    position: relative;
+    z-index: 300;
+    width: 100%;
+    height: 8px;
+    background-color: #53df5f;
+}
+
+
+.mensagem-erro {
+    position: relative;
+    z-index: 300;
+    width: 100%;
+    height: 8px;
+    background-color: #dd303f;
+}
+

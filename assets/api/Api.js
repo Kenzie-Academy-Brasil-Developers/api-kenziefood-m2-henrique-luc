@@ -1,4 +1,6 @@
 import { Usuario } from "../models/Usuario.js";
+import { MensagemDeStatus } from "../models/MensagemDeStatus.js";
+import { MensagemDeStatusView } from "../views/MensagemDeStatusView.js";
 
 const Api = class Api {
 
@@ -73,7 +75,11 @@ const Api = class Api {
                 body: JSON.stringify(data)
             });
 
-        console.log(response)
+            if (response) {
+                const texto = "Produto cadastrado com sucesso"
+                const mensagem = new MensagemDeStatus(texto, true);
+                MensagemDeStatusView.abreMensagem(mensagem);
+            }
     }
 
 
@@ -89,7 +95,11 @@ const Api = class Api {
                 body: JSON.stringify(data)
             });
 
-        console.log(response)
+        if (response) {
+            const texto = "Produto alterado com sucesso"
+            const mensagem = new MensagemDeStatus(texto, true);
+            MensagemDeStatusView.abreMensagem(mensagem);
+        }
     }
 
 
@@ -104,7 +114,11 @@ const Api = class Api {
                 }
             });
 
-        console.log(response)
+            if (response) {
+                const texto = "Produto excluído com sucesso"
+                const mensagem = new MensagemDeStatus(texto, true);
+                MensagemDeStatusView.abreMensagem(mensagem);
+            }
     }
 
 }

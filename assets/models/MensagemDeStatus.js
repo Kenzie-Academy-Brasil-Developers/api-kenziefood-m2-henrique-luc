@@ -3,7 +3,7 @@ const MensagemDeStatus = class MensagemDeStatus {
     constructor(mensagem, status = true) {
         this._mensagem  = mensagem;
         this._status    = status;
-        this._id        = id;
+        this._id        = "status";
     }
 
     abreModal() {
@@ -36,17 +36,17 @@ const MensagemDeStatus = class MensagemDeStatus {
 
         if(this._status)
             return `
-                <div>
-                    <header>Status</header>
-                    <p> ${this._mensagem} </p>
-                    <div class="mensagem-sucesso"></div>
+                <div class="mensagem-status">
+                    <h4 class="status-titulo">Status</h4 class="status-titulo">
+                    <p>${this._mensagem}</p>
+                    <div class="mensagem-sucesso"> </div>
                 </div>`
         else
             return `
-                <div>
-                    <header>Status</header>
-                    <p> ${this._mensagem} </p>
-                    <div class="mensagem-erro"></div>
+                <div class="mensagem-status">
+                    <h4 class="status-titulo">Status</h4 class="status-titulo">
+                    <p>${this._mensagem}</p>
+                    <div class="mensagem-erro"> </div>
                 </div>`
     }
 }
