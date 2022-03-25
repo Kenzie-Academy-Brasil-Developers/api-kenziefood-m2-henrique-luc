@@ -24,6 +24,13 @@ const FiltroCategoria = class FiltroCategoria {
 
         VitrineView.criaVitrine(produtosInclusos)
     }
+
+    static async categoriaCard(botao) {
+        const listaProdutos = await Vitrine.listaDeProdutos;
+
+        console.log(botao)
+
+    }
 }
 
 export { FiltroCategoria }

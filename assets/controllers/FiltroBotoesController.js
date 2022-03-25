@@ -29,3 +29,11 @@ input.addEventListener('keydown', () => {
     FiltroPesquisa.pesquisa(input)
 })
 
+//const buttonCategoriaCard = document.querySelector('.produto-categoria')
+//
+//console.log(buttonCategoriaCard)
+//
+//buttonCategoriaCard.addEventListener('click', () => {
+//    FiltroCategoria.categoriaCard(buttonCategoriaCard)
+//})
+
