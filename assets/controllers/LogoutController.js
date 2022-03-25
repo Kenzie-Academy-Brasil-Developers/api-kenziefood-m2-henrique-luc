@@ -38,6 +38,15 @@ const LogoutUsuario = class LogoutUsuario{
             this.desloga(element)
         })
     }
+
+    setarBotaoAdmin(){
+        const element = document.getElementById(this._ancoraAdmimId)
+        console.log("aqui")
+        element.addEventListener("click", e =>{
+            window.location.href = "admin.html"
+        })
+    }
+
     desloga(element){
         const elementLogin = document.getElementById(this._loginId)
         const elementCadastro = document.getElementById(this._cadastroId)

@@ -17,6 +17,7 @@ cadastroBotao.setaBotao()
 
 const logout = new LogoutUsuario("logout", "login", "cadastro", "ancoraAdmim")
 logout.setaBotao()
+logout.setarBotaoAdmin()
 
 loginCadastro.verificaStatus(loginBotao.apagaBotao(), cadastroBotao.apagaBotao())
 
